@@ -1,0 +1,129 @@
+@import "../../scss/variables";
+
+.home__content-middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.table-left {
+    width: 753px;
+    padding: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    background-color: $main-white;
+
+}
+
+.table-right {
+    width: 498px;
+    padding: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    background-color: $main-white;
+}
+
+.table__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #171A23;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.table {
+    border-collapse: initial;
+
+    thead {
+        background-color: #F6F6F6;
+        border-radius: 5px !important;
+
+        tr {
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: capitalize;
+            color: #171A23;
+            opacity: 0.6;
+
+            th {
+                width: 0;
+                padding: 11px 0px 11px 20px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            text-align: left;
+            border-bottom: 1px solid #EAEBEB;
+
+            th {
+                width: 0;
+                padding: 10px 0px 10px 20px;
+            }
+
+            td {
+                padding: 10px 0px 10px 20px;
+            }
+        }
+
+    }
+
+}
+
+.td {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    margin: 0;
+}
+
+.td__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #171A23;
+    margin: 0;
+}
+
+.td__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #171A23;
+}
+
+
+.first {
+    width: 705px;
+    border-collapse: collapse;
+}
+
+.second {
+    width: 450px;
+    border-collapse: collapse;
+}
+
+.second__td-title {
+    width: 190px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #171A23;
+}
+
+.second__td-time {
+    width: 80px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #171A23;
+    opacity: 0.8;
+
+}

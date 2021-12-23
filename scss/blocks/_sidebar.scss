@@ -1,0 +1,84 @@
+@import "../variables";
+
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.sidebar {
+    width: 76px;
+    height: 100%;
+    padding: 18px 18px 15px 18px;
+    background-color: $main-white;
+}
+
+.sidebar__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-top: 140px;
+}
+
+
+.sidebar__item-link {
+    position: relative;
+    display: inline-block;
+    background: #FFFFFF;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.link--active:hover {
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(1, 96, 90, 0.1);
+    border-radius: 12px;
+    padding: 8px;
+
+    svg {
+        path {
+            stroke-width: 0;
+            fill: #01605A;
+            opacity: 1;
+            stroke: #fff;
+        }
+    }
+
+    .svg2 {
+        path {
+            stroke-width: 0;
+            fill: #01605A;
+            stroke: #fff;
+        }
+
+        g {
+            opacity: 1;
+        }
+    }
+}
+
+.link-alert {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: #EE245A;
+    border-radius: 50px;
+    top: 7px;
+    right: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+.sidebar__avatar-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 100px;
+}
