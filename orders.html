@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/site-logo.svg">
     <link rel="stylesheet" href="./scss/main.css">
-    <title>Admin panel || Bosh sahifa</title>
+    <title>Admin Panel || Buyurtmalar</title>
 </head>
 
 <body>
-    <div class="home">
+    <div class="orders">
         <div class="sidebar">
-            <a class="sidebar__logo-link" href="./index.html">
+            <a class="sidebar__logo-link" href="#">
                 <img src="./images/site-logo.svg" alt="site-logo" width="40" height="40">
             </a>
 
             <ul class="sidebar__list">
                 <li class="sidebar__item">
-                    <a class="sidebar__item-link link--active" href="#">
+                    <a class="sidebar__item-link link--active" href="./index.html">
                         <span>
                             <svg class="svg" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -146,197 +146,128 @@
             </a>
         </div>
 
-        <div class="home__content">
-            <div class="home-content__header header">
-                <h2 class="header__title">Bosh sahifa</h2>
-                <select class="header__select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-            </div>
+        <div class="orders__content">
+            <h2 class="header__title">Buyurtmalar</h2>
 
-            <ul class="home__content-list home-list">
-                <li class="home-list__item">
-                    <div class="home-list__item-card card">
-                        <h5 class="card__title">Daromad</h5>
-                        <p class="card__status sum">40 000 000 uzs</p>
-                        <div class="card__status-wrapper status">
-                            <svg class="card__status-arrow red" width="16" height="16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.46 5.8a.5.5 0 0 0-.46-.3H3a.5.5 0 0 0-.35.85l5 5a.5.5 0 0 0 .7 0l5-5a.5.5 0 0 0 .11-.54Z"
-                                    fill="#EE245A" /></svg>
-                            <span class="status__number red">18%</span>
-                        </div>
-                    </div>
-                </li>
+            <div class="table-header">
+                <div class="table-header__left">
+                    <ul class="table-header__left-list">
+                        <li class="table-header__left-item item--active">
+                            <p class="table-header__left-item-text">Barcha</p>
+                        </li>
 
-                <li class="home-list__item">
-                    <div class="home-list__item-card card">
-                        <h5 class="card__title">Buyurtmalar</h5>
-                        <p class="card__status">475 dona</p>
-                        <div class="card__status-wrapper status">
-                            <svg class="card__status-arrow green-arr" width="16" height="16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.46 5.8a.5.5 0 0 0-.46-.3H3a.5.5 0 0 0-.35.85l5 5a.5.5 0 0 0 .7 0l5-5a.5.5 0 0 0 .11-.54Z"
-                                    fill="#EE245A" /></svg>
-                            <span class="status__number green">18%</span>
-                        </div>
-                    </div>
-                </li>
+                        <li class="table-header__left-item">
+                            <p class="table-header__left-item-text">Tasdiqlanmagan</p>
+                        </li>
 
-                <li class="home-list__item">
-                    <div class="home-list__item-card card">
-                        <h5 class="card__title">Foydalanuvchilar</h5>
-                        <p class="card__status">7 869 dona</p>
-                        <div class="card__status-wrapper status">
-                            <svg class="card__status-arrow green-arr" width="16" height="16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.46 5.8a.5.5 0 0 0-.46-.3H3a.5.5 0 0 0-.35.85l5 5a.5.5 0 0 0 .7 0l5-5a.5.5 0 0 0 .11-.54Z"
-                                    fill="#EE245A" /></svg>
-                            <span class="status__number green">36%</span>
-                        </div>
-                    </div>
-                </li>
+                        <li class="table-header__left-item">
+                            <p class="table-header__left-item-text">Tayyorlanmoqda</p>
+                        </li>
 
-                <li class="home-list__item">
-                    <div class="home-list__item-card card">
-                        <h5 class="card__title">Tashriflar</h5>
-                        <p class="card__status">98 614 dona</p>
-                        <div class="card__status-wrapper status">
-                            <svg class="card__status-arrow red" width="16" height="16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.46 5.8a.5.5 0 0 0-.46-.3H3a.5.5 0 0 0-.35.85l5 5a.5.5 0 0 0 .7 0l5-5a.5.5 0 0 0 .11-.54Z"
-                                    fill="#EE245A" /></svg>
-                            <span class="status__number red">57%</span>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="home-list__item">
-                    <div class="home-list__item-card card">
-                        <h5 class="card__title">MAU</h5>
-                        <p class="card__status">10 248 dona</p>
-                        <div class="card__status-wrapper status">
-                            <svg class="card__status-arrow green-arr" width="16" height="16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.46 5.8a.5.5 0 0 0-.46-.3H3a.5.5 0 0 0-.35.85l5 5a.5.5 0 0 0 .7 0l5-5a.5.5 0 0 0 .11-.54Z"
-                                    fill="#EE245A" /></svg>
-                            <span class="status__number green">57%</span>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="home__content-middle">
-                <div class="table-left">
-                    <h2 class="table__title">Bestseller mahsulotlar</h2>
-                    <table class="table first">
-                        <thead>
-                            <tr>
-                                <th scope="col">№</th>
-                                <th scope="col">Mahsulot</th>
-                                <th scope="col">Narxi</th>
-                                <th scope="col">Sotilgan</th>
-                                <th scope="col">Daromad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td class="td">
-                                    <img src="./images/book-yuqumlik.png" alt="">
-                                    <p class="td__title">Yuqumlilik. Mahsulotlar qan...</p>
-                                </td>
-                                <td class="td__text">99 000 UZS</td>
-                                <td class="td__text">387ta</td>
-                                <td class="td__text">38 313 000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td class="td">
-                                    <img src="./images/book-sell.png" alt="">
-                                    <p class="td__title">Sell like crazy</p>
-                                </td>
-                                <td class="td__text">79 000 UZS</td>
-                                <td class="td__text">314ta</td>
-                                <td class="td__text">24 864 000 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td class="td">
-                                    <img src="./images/book-country.png" alt="">
-                                    <p class="td__title">Mamlakatlar tanazzuli sabab...</p>
-                                </td>
-                                <td class="td__text">45 000 UZS</td>
-                                <td class="td__text">216ta</td>
-                                <td class="td__text">18 486 000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td class="td">
-                                    <img src="./images/book-yuqumlik.png" alt="">
-                                    <p class="td__title">Sell like crazy</p>
-                                </td>
-                                <td class="td__text">79 000 UZS</td>
-                                <td class="td__text">314ta</td>
-                                <td class="td__text">20 250 000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td class="td">
-                                    <img src="./images/book-sell.png" alt="">
-                                    <p class="td__title">Mamlakatlar tanazzuli sabab...</p>
-                                </td>
-                                <td class="td__text">79 000 UZS</td>
-                                <td class="td__text">314ta</td>
-                                <td class="td__text">30 086 000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <li class="table-header__left-item">
+                            <p class="table-header__left-item-text">Yetkazilgan</p>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="table-right">
-                    <h2 class="table__title">Qidiruv so’rovlari</h2>
-                    <table class="table second">
-                        <thead>
-                            <tr>
-                                <th scope="col">So’rov</th>
-                                <th scope="col">Vaqt</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="second__td-title">Lorem ipsum dolorem sit amet</td>
-                                <td class="second__td-time">28 Fevral, 16:24</td>
-                            </tr>
-                            <tr>
-                                <td class="second__td-title">Erkin obidov ertaklar to’plami</td>
-                                <td class="second__td-time">28 Fevral, 16:24</td>
-                            </tr>
-                            <tr>
-                                <td class="second__td-title">Redmi X12 ultra SSD 64mb supervision asdf98</td>
-                                <td class="second__td-time">28 Fevral, 16:24</td>
-                            </tr>
-                            <tr>
-                                <td class="second__td-title">Redmi X12 ultra SSD 64mb supervision asdf98</td>
-                                <td class="second__td-time">28 Fevral, 16:24</td>
-                            </tr>
-                            <tr>
-                                <td class="second__td-title">Redmi X12 ultra SSD 64mb supervision asdf98</td>
-                                <td class="second__td-time">28 Fevral, 16:24</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="table-header__right">
+                    <input class="table-header__right-search-input" type="search"
+                        placeholder="ID/Xaridor bo’yicha qidiring...">
+                    <select class="table-header__right-select">
+                        <option value="Shu hafta">Shu hafta</option>
+                    </select>
                 </div>
             </div>
+            <div class="table-wrapper">
+                <table class="table-orders">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Buyurtma</th>
+                            <th scope="col">Sana va vaqt</th>
+                            <th scope="col">Chek</th>
+                            <th scope="col">Xaridor</th>
+                            <th scope="col">To’lov turi</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <a href="#">
+                            <tr>
+                                <th scope="row">#123456789</th>
+                                <td>1ta kitob</td>
+                                <td>14 Fevral, 14:41</td>
+                                <td>548 000</td>
+                                <td>Eshmat Toshmatov</td>
+                                <td>Naqd</td>
+                                <td>Tasdiqlanmagan</td>
+                            </tr>
+                        </a>
+                        <tr>
+                            <th scope="row">#123456789</th>
+                            <td>1ta kitob</td>
+                            <td>14 Fevral, 14:41</td>
+                            <td>548 000</td>
+                            <td>Eshmat Toshmatov</td>
+                            <td>Naqd</td>
+                            <td>Yetkazilgan</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#123456789</th>
+                            <td>1ta kitob</td>
+                            <td>14 Fevral, 14:41</td>
+                            <td>548 000</td>
+                            <td>Eshmat Toshmatov</td>
+                            <td>Naqd</td>
+                            <td>Tasdiqlanmagan</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#123456789</th>
+                            <td>1ta kitob</td>
+                            <td>14 Fevral, 14:41</td>
+                            <td>548 000</td>
+                            <td>Eshmat Toshmatov</td>
+                            <td>Naqd</td>
+                            <td>Tayyorlanmoqda</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#123456789</th>
+                            <td>1ta kitob</td>
+                            <td>14 Fevral, 14:41</td>
+                            <td>548 000</td>
+                            <td>Eshmat Toshmatov</td>
+                            <td>Naqd</td>
+                            <td>Tayyorlanmoqda</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#123456789</th>
+                            <td>1ta kitob</td>
+                            <td>14 Fevral, 14:41</td>
+                            <td>548 000</td>
+                            <td>Eshmat Toshmatov</td>
+                            <td>Naqd</td>
+                            <td>yo’lda</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#123456789</th>
+                            <td>1ta kitob</td>
+                            <td>14 Fevral, 14:41</td>
+                            <td>548 000</td>
+                            <td>Eshmat Toshmatov</td>
+                            <td>Naqd</td>
+                            <td>Yetkazilgan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
+            <div class="table-pagination">
+                <button class="prev-btn"><img src="./images/arrow-left.svg" alt="arrow-left" width="20"
+                        height="20"></button>
+                <p class="pagination__text"><span class="paginatio__total-num">18</span>tadan</p>
+                <span class="pagination__list-num">1</span>
+                <button class="next-btn"><img src="./images/arrow-right.svg" alt="arrow-right" width="20"
+                        height="20"></button>
+            </div>
         </div>
     </div>
 </body>

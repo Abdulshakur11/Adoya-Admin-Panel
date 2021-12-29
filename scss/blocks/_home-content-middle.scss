@@ -34,12 +34,8 @@
 }
 
 .table {
-    border-collapse: initial;
-
     thead {
         background-color: #F6F6F6;
-        border-radius: 5px !important;
-
         tr {
             text-align: left;
             font-weight: 500;
@@ -49,9 +45,14 @@
             color: #171A23;
             opacity: 0.6;
 
-            th {
+            th:first-child {
+                border-radius: 6px 0px 0px 6px;
                 width: 0;
                 padding: 11px 0px 11px 20px;
+            }
+            th:last-child {
+                border-radius: 0px 6px 6px 0px;
+                padding-left: 20px;
             }
         }
     }
@@ -78,7 +79,6 @@
 .td {
     display: flex;
     align-items: center;
-    width: 210px;
     margin: 0;
 }
 
