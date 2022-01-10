@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/site-logo.svg">
     <link rel="stylesheet" href="./scss/main.css">
-    <title>Admin Panel || Buyurtmalar</title>
+    <title>Admin Panel || Mahsulotlar</title>
 </head>
 
 <body>
-    <div class="orders">
+    <div class="products">
         <div class="sidebar">
             <a class="sidebar__logo-link" href="./index.html">
                 <img class="site-logo" src="./images/site-logo.svg" alt="site-logo" width="40" height="40">
@@ -145,136 +144,142 @@
                 <img src="./images/user-avatar.png" alt="avatar" width="40" height="40">
             </a>
         </div>
-
-        <div class="orders__content">
-            <h2 class="header__title">Buyurtmalar</h2>
-
-            <div class="table-header">
-                <div class="table-header__left">
-                    <ul class="table-header__left-list">
-                        <li class="table-header__left-item item--active">
-                            <p class="table-header__left-item-text table-header__left-item-text--active">Barcha</p>
-                        </li>
-
-                        <li class="table-header__left-item">
-                            <p class="table-header__left-item-text">Tasdiqlanmagan</p>
-                        </li>
-
-                        <li class="table-header__left-item">
-                            <p class="table-header__left-item-text">Tayyorlanmoqda</p>
-                        </li>
-
-                        <li class="table-header__left-item">
-                            <p class="table-header__left-item-text">Yetkazilgan</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="table-header__right">
-                    <input class="table-header__right-search-input" type="search"
-                        placeholder="ID/Xaridor bo’yicha qidiring...">
-                    <select class="table-header__right-select">
-                        <option value="Shu hafta">Shu hafta</option>
-                    </select>
-                </div>
+        <div class="products__content">
+            <div class="products__content-header">
+                <h2 class="header__title">Mahsulotlar</h2>
+                 <button class="header__add-btn">Mahsulot qo’shish</button>
             </div>
-            <div class="table-wrapper">
-                <table class="table-orders">
-                    <thead> 
+
+            <div class="products__table-header">
+                <ul class="products__table-header-list">
+                    <li class="products__table-header-item item--active">
+                        <p class="products__item-text products__item-text--active">Barcha</p>
+                    </li>
+                    <li class="products__table-header-item">
+                        <p class="products__item-text">Arxiv</p>
+                    </li>
+                </ul>
+                <input class="table-header__right-search-input products__header-input" type="search"
+                    placeholder="ID/Nom bo’yicha qidiring...">
+            </div>
+
+            <div class="products__table-wrapper">
+                <table class="products__table">
+                    <thead>
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Buyurtma</th>
-                            <th scope="col">Sana va vaqt</th>
-                            <th scope="col">Chek</th>
-                            <th scope="col">Xaridor</th>
-                            <th scope="col">To’lov turi</th>
-                            <th scope="col">Status</th>
+                            <th scope="col">Mahsulot</th>
+                            <th scope="col">Artikul</th>
+                            <th scope="col">Qo’shilgan</th>
+                            <th scope="col">Narxi</th>
+                            <th scope="col">Chegirma</th>
+                            <th scope="col">Sotilgan</th>
+                            <th scope="col">Skladda</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <a href="#">
-                            <tr >
-                                <th scope="row">#123456789</th>
-                                <td>1ta kitob</td>
-                                <td>14 Fevral, 14:41</td>
-                                <td>548 000</td>
-                                <td>Eshmat Toshmatov</td>
-                                <td>Naqd</td>
-                                <td>
-                                    Tasdiqlanmagan
-                                    <button><img src="./images/dots-three-vertical.svg" alt="three-dots"></button>
-                                </td>
-                            </tr>
-                        </a>
                         <tr>
-                            <th scope="row">#123456789</th>
-                            <td>1ta kitob</td>
-                            <td>14 Fevral, 14:41</td>
-                            <td>548 000</td>
-                            <td>Eshmat Toshmatov</td>
-                            <td>Naqd</td>
-                            <td>Yetkazilgan
+                            <th>
+                                <img src="./images/book-yuqumlik.png" alt="" width="40" height="40">
+                                <p class=" td__title">Yuqumlilik. Mahsulotlar qan...</p>
+                            </th>
+                            <td>123456789</td>
+                            <td>14 Fevral, 10:24</td>
+                            <td>79 000 UZS</td>
+                            <td>-12 000 UZS</td>
+                            <td>125ta</td>
+                            <td>
+                                <span>24</span>
                                 <button><img src="./images/dots-three-vertical.svg" alt="three-dots"></button>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#123456789</th>
-                            <td>1ta kitob</td>
-                            <td>14 Fevral, 14:41</td>
-                            <td>548 000</td>
-                            <td>Eshmat Toshmatov</td>
-                            <td>Naqd</td>
-                            <td>Tasdiqlanmagan
+                            <th>
+                                <img src="./images/book-sell.png" alt="" width="40" height="40">
+                                <p class="td__title">Sell like crazy</p>
+                            </th>
+                            <td>123456789</td>
+                            <td>14 Fevral, 10:24</td>
+                            <td>79 000 UZS</td>
+                            <td>-12 000 UZS</td>
+                            <td>125ta</td>
+                            <td><span>6</span>
                                 <button><img src="./images/dots-three-vertical.svg" alt="three-dots"></button>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#123456789</th>
-                            <td>1ta kitob</td>
-                            <td>14 Fevral, 14:41</td>
-                            <td>548 000</td>
-                            <td>Eshmat Toshmatov</td>
-                            <td>Naqd</td>
-                            <td>Tayyorlanmoqda
+                            <th>
+                                <img src="./images/book-country.png" alt="" width="40" height="40">
+                                <p class=" td__title">Mamlakatlar tanazzuli sabab...</p>
+                            </th>
+                            <td>123456789</td>
+                            <td>14 Fevral, 10:24</td>
+                            <td>79 000 UZS</td>
+                            <td>-12 000 UZS</td>
+                            <td>125ta</td>
+                            <td><span>4</span>
                                 <button><img src="./images/dots-three-vertical.svg" alt="three-dots"></button>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#123456789</th>
-                            <td>1ta kitob</td>
-                            <td>14 Fevral, 14:41</td>
-                            <td>548 000</td>
-                            <td>Eshmat Toshmatov</td>
-                            <td>Naqd</td>
-                            <td>Tayyorlanmoqda
+                            <th>
+                                <img src="./images/book-yuqumlik.png" alt="" width="40" height="40">
+                                <p class=" td__title">Sell like crazyr</p>
+                            </th>
+                            <td>123456789</td>
+                            <td>14 Fevral, 10:24</td>
+                            <td>79 000 UZS</td>
+                            <td>-12 000 UZS</td>
+                            <td>125ta</td>
+                            <td><span>9</span>
                                 <button><img src="./images/dots-three-vertical.svg" alt="three-dots"></button>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#123456789</th>
-                            <td>1ta kitob</td>
-                            <td>14 Fevral, 14:41</td>
-                            <td>548 000</td>
-                            <td>Eshmat Toshmatov</td>
-                            <td>Naqd</td>
-                            <td>yo’lda
+                            <th>
+                                <img src="./images/book-sell.png" alt="" width="40" height="40">
+                                <p class=" td__title">Mamlakatlar tanazzuli sabab...</p>
+                            </th>
+                            <td>123456789</td>
+                            <td>14 Fevral, 10:24</td>
+                            <td>79 000 UZS</td>
+                            <td>-12 000 UZS</td>
+                            <td>125ta</td>
+                            <td><span>3</span>
                                 <button><img src="./images/dots-three-vertical.svg" alt="three-dots"></button>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#123456789</th>
-                            <td>1ta kitob</td>
-                            <td>14 Fevral, 14:41</td>
-                            <td>548 000</td>
-                            <td>Eshmat Toshmatov</td>
-                            <td>Naqd</td>
-                            <td>Yetkazilgan
+                            <th>
+                                <img src="./images/book-sell.png" alt="" width="40" height="40">
+                                <p class=" td__title">Mamlakatlar tanazzuli sabab...</p>
+                            </th>
+                            <td>123456789</td>
+                            <td>14 Fevral, 10:24</td>
+                            <td>79 000 UZS</td>
+                            <td>-12 000 UZS</td>
+                            <td>125ta</td>
+                            <td><span>15</span>
+                                <button><img src="./images/dots-three-vertical.svg" alt="three-dots"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="./images/book-sell.png" alt="" width="40" height="40">
+                                <p class=" td__title">Mamlakatlar tanazzuli sabab...</p>
+                            </th>
+                            <td>123456789</td>
+                            <td>14 Fevral, 10:24</td>
+                            <td>79 000 UZS</td>
+                            <td>-12 000 UZS</td>
+                            <td>125ta</td>
+                            <td><span>15</span>
                                 <button><img src="./images/dots-three-vertical.svg" alt="three-dots"></button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
 
+            </div>
             <div class="table-pagination">
                 <button class="prev-btn"><img src="./images/arrow-left.svg" alt="arrow-left" width="20"
                         height="20"></button>
@@ -283,7 +288,7 @@
                 <button class="next-btn"><img src="./images/arrow-right.svg" alt="arrow-right" width="20"
                         height="20"></button>
             </div>
-        </div> 
+        </div>
     </div>
 </body>
 

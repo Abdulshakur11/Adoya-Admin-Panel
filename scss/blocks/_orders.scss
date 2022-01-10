@@ -1,11 +1,14 @@
 .orders {
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .orders__content {
-    padding: 40px 48px 20px 48px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    padding: 40px 48px 10px 48px;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 .table-header {
@@ -16,7 +19,7 @@
 }
 
 .table-header__left {
-    width: 719px;
+    width: 100%;
     background-color: #fff;
     margin-right: 3px;
     border-radius: 12px 0px 0px 0px;
@@ -46,24 +49,22 @@
     margin: 0;
 }
 
-
-
 .table-header__right {
-    width: 546px;
+    width: 100%;
     padding: 11.3px 32px 11px 32px;
     background-color: #fff;
     border-radius: 0px 12px 0px 0px;
 }
 
 .table-header__right-search-input {
-    width: 320px;
-    height: 40px;
+    width: 100%;
+    max-width: 320px;
     opacity: 0.5;
     outline: none;
     border: 1px solid #171A23;
     border-radius: 5px;
-    padding-left: 46px;
     padding-right: 5px;
+    padding: 10px 10px 9px 46px;
     background-image: url("../../images/magnifying-glass.png");
     background-repeat: no-repeat;
     background-position: center left 16px;
@@ -76,8 +77,7 @@
     line-height: 19px;
     letter-spacing: -0.02em;
     color: #171A23;
-    margin-left: auto;
-    padding: 9px 60px 9px 16px;
+    padding: 10px 60px 9px 16px;
     border: 1px solid rgba(23, 26, 35, 0.2);
     box-sizing: border-box;
     border-radius: 5px;
@@ -87,14 +87,16 @@
     background-position: center right 14px;
 }
 
-.table-wrapper {
+.table-wrapper { 
     background-color: #fff;
     padding: 24px 32px;
+    border-radius: 0px 0px 12px 12px;
 }
 
 .table-orders {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 .table-orders thead tr {
@@ -119,29 +121,13 @@
     opacity: 0.6;
 }
 
+
 .table-orders th,
 .table-orders td {
     text-align: left;
     padding: 11px 0px 12px 21px;
 }
 
-.table-orders tbody tr {
-    position: relative;
-    border: 1px solid rgba(23, 26, 35, 0.06);
-    border-radius: 10px;
-
-    &::after {
-        position: absolute;
-        display: block;
-        content: "";
-        width: 24px;
-        height: 24px;
-        top: 17px;
-        right: 10px;
-        cursor: pointer;
-        background-image: url("../../images/dots-three-vertical.svg");
-    }
-}
 
 .table-orders tbody tr:hover th,
 .table-orders tbody tr:hover td {
@@ -159,6 +145,22 @@
     color: #171A23;
     opacity: 0.75;
     padding: 20px 0px 20px 21px;
+    border-top: 1px solid #e6e6ee;
+    border-bottom: 1px solid #e6e6ee;
+}
+
+
+.table-orders tbody th:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left: 1px solid #e6e6ee;
+}
+
+
+.table-orders tbody td:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right: 1px solid #e6e6ee;
 }
 
 .table-orders tbody tr:nth-child(1) td:last-child {
@@ -272,8 +274,18 @@
 }
 
 .table-orders tr {
+    position: relative;
     background-color: #fff;
 }
+
+.table-orders tbody tr td:last-child button {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+}
+
 
 
 //=======================

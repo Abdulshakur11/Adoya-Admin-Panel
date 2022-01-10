@@ -1,0 +1,109 @@
+.payments {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.payments__content {
+  width: 100%;
+  padding: 40px 48px 10px 48px;
+}
+
+.payments__tableheader-right {
+  width: 100%;
+  max-width: 384px;
+}
+
+.payments__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.payments__table thead tr {
+  background-color: #F6F6F6;
+}
+
+.payments__table thead th:first-child {
+  border-radius: 6px 0px 0px 6px;
+}
+
+.payments__table thead th:last-child {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.payments__table thead th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #171A23;
+  opacity: 0.6;
+}
+
+
+
+.payments__table th,
+.payments__table td {
+  text-align: left;
+  padding: 11px 0px 12px 21px;
+}
+
+.payments__table tbody tr {
+  position: relative;
+}
+
+.payments__table tbody tr td:last-child button {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  border: none;
+  background-color: #fff;
+}
+
+.payments__table tbody tr:hover th,
+.editor__table tbody tr:hover td {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.payments__table tbody th,
+.payments__table tbody td {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #171A23;
+  opacity: 0.75;
+  padding: 21px 0px 21px 21px;
+  border-top: 1px solid #e6e6ee;
+  border-bottom: 1px solid #e6e6ee;
+}
+
+
+.payments__table tbody th{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-left: 1px solid #e6e6ee;
+}
+
+
+.payments__table tbody td:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-right: 1px solid #e6e6ee;
+}
+
+
+.payments__table tbody tr:first-child  td:last-child img{
+  transform: translateY(4px);
+}
+ .payments__table tbody tr:nth-child(4)  td:last-child img{
+  transform: translateY(4px);
+} 
+.payments__table tbody tr:nth-child(7)  td:last-child img{
+  transform: translateY(4px);
+} 

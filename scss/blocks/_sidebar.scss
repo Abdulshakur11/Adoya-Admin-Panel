@@ -6,6 +6,17 @@
     display: flex;
 }
 
+.site-logo {
+    display: block;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+}
+
+.site-logo:hover {
+    box-shadow: 2px 2px 8px #02887f;
+}
+
+
 .sidebar {
     width: 76px;
     height: 100%;
@@ -36,27 +47,21 @@
     border-radius: 12px;
     padding: 8px;
 
+
     svg {
         path {
-            stroke-width: 0;
             fill: #01605A;
             opacity: 1;
-            stroke: #fff;
+            stroke: rgb(255, 255, 255);
         }
-    }
-
-    .svg2 {
-        path {
-            stroke-width: 0;
-            fill: #01605A;
-            stroke: #fff;
-        }
-
+        
         g {
             opacity: 1;
         }
     }
 }
+
+
 
 .link-alert {
     position: absolute;
